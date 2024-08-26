@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "JoFinance",
   description: "JoFinance is a modern banking platform for everyone.",
   icons: {
-    icon: "/icons/logo.svg",
+    icon: "/icons/finance-logo.svg",
   },
 };
 

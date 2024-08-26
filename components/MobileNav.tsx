@@ -37,7 +37,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
             className="cursor-pointer flex items-center gap-1 px-4"
           >
             <Image
-              src="/icons/logo.svg"
+              src="/icons/finance-logo.svg"
               width={34}
               height={34}
               alt="JoFinance logo"
