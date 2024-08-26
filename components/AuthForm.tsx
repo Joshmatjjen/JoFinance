@@ -36,8 +36,10 @@ const AuthForm = ({ type }: { type: string }) => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      email: "",
-      password: "",
+      email: type === "sign-up" ? "" : "joshmatparrot@gmail.com",
+      password: type === "sign-up" ? "" : "Pass2024",
+      city: "New York",
+      state: "NY",
     },
   });
 
@@ -179,14 +181,14 @@ const AuthForm = ({ type }: { type: string }) => {
                 control={form.control}
                 name="email"
                 label="Email"
-                placeholder="Enter your email"
+                placeholder="Enter your email eg: joshmatparrot@gmail.com"
               />
 
               <CustomInput
                 control={form.control}
                 name="password"
                 label="Password"
-                placeholder="Enter your password"
+                placeholder="Enter your password  eg: Pass@2024"
               />
 
               <div className="flex flex-col gap-4">
